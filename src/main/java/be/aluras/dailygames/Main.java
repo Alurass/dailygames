@@ -1,6 +1,6 @@
 package be.aluras.dailygames;
 
-import be.aluras.dailygames.commands.Daily;
+import be.aluras.dailygames.commands.DailyCommand;
 import net.minestom.server.MinecraftServer;
 import net.minestom.server.command.CommandManager;
 import net.minestom.server.coordinate.Pos;
@@ -36,7 +36,7 @@ public class Main {
         });
 
         CommandManager commandManager = MinecraftServer.getCommandManager();
-        commandManager.register(new Daily());
+        commandManager.register(new DailyCommand(new DailyReward()));
 
         server.start("0.0.0.0", 25565);
     }
