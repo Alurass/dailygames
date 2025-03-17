@@ -12,7 +12,7 @@ repositories {
 dependencies {
     testImplementation(platform("org.junit:junit-bom:5.10.0"))
     testImplementation("org.junit.jupiter:junit-jupiter")
-    implementation("net.minestom:minestom-snapshots:39d445482f")
+    implementation("net.minestom:minestom-snapshots:1_21_4-b7c38fd36b")
 }
 
 tasks.test {
